@@ -1,8 +1,8 @@
 <template>
     <div class="transaction">
         <p>
-            {{ transaction._id }}
-            <button class="del">x</button>
+            {{ transaction.amount }}
+            <button @click="$emit('del-transaction', transaction._id)" class="del">x</button>
         </p>
     </div>
 </template>
